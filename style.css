@@ -16,9 +16,25 @@
   --amarillocla: #f6cd03;
 }
 
-header {
+main{
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section{  
+  max-width: 1440px
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--negrograf);
 }
 
 /* menu y menu hamburguesa */
@@ -27,6 +43,7 @@ header {
 }
 
 .navbar {
+  max-width: 1440px;
   width: 100%;
   height: 100px;
   display: flex;
@@ -51,6 +68,10 @@ header {
 .nav-label,
 .nav-input {
   display: none;
+}
+
+.logo{
+  width: 210px;
 }
 
 
@@ -110,7 +131,7 @@ ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 a {
@@ -121,7 +142,16 @@ a {
 
 /* hero */
 
+#hero{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
 .bannerhero {
+  max-width: 1440px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,13 +165,13 @@ a {
 }
 
 .herotxt h1 {
-  font-size: 39px;
+  font-size: 35 px;
   line-height: 1.2;
 
 }
 
 .herotxt li {
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 600 !important;
 }
 
@@ -156,7 +186,7 @@ a {
 }
 
 .heroimg {
-  height: 450px;
+  height: 370px;
 }
 
 @media (max-width: 1024px) {
@@ -194,11 +224,21 @@ a {
 
 /* tracking */
 
-.tracking {
+#tracking{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: var(--amarillocla);
-  padding: 50px 12%;
+
+}
+
+.tracking {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 25px 4%;
 }
 
 .inputarea {
@@ -246,6 +286,15 @@ a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+  }
+  .tracking input{
+    height: 100%;
+    font-size: 1em;
+  }
+
+  .tracking button{
+    font-size: 1.1rem;
   }
 }
 
@@ -253,6 +302,7 @@ a {
 
 .iconos-container {
   width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   color: var(--amarillocla);
@@ -295,11 +345,13 @@ a {
 
 .infotext {
   width: 100%;
+  max-width: 1440px;
   text-align: center;
   text-transform: uppercase
 }
 
 /* cards */
+
 
 .cards {
   height: 100%;
@@ -323,7 +375,7 @@ a {
 .card {
   width: 100%;
   height: 100%;
-  padding: 2em 1.5em;
+  padding: 2em 2em;
   background: linear-gradient(var(--negrograf) 50%, var(--amarilloosc) 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
@@ -400,6 +452,12 @@ a {
   }
 }
 
+@media (max-width: 600px){
+  .galeria{
+  display: flex!important;
+  flex-direction: column;
+}
+}
 
 /* chofer */
 
@@ -433,6 +491,7 @@ a {
 /* galeria */
 
 .galeria {
+  padding: 0 1em 0 1em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -465,6 +524,13 @@ a {
 }
 
 /* contacto   */
+
+footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center ;
+}
 
 .contacto {
   background-color: var(--amarillocla);
