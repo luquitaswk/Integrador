@@ -16,7 +16,7 @@
   --amarillocla: #f6cd03;
 }
 
-main{
+main {
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,7 +25,7 @@ main{
   align-items: center;
 }
 
-section{  
+section {
   max-width: 1440px
 }
 
@@ -70,7 +70,7 @@ header {
   display: none;
 }
 
-.logo{
+.logo {
   width: 210px;
 }
 
@@ -142,7 +142,7 @@ a {
 
 /* hero */
 
-#hero{
+#hero {
   width: 100%;
   height: 100%;
   display: flex;
@@ -224,7 +224,7 @@ a {
 
 /* tracking */
 
-#tracking{
+#tracking {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -288,12 +288,13 @@ a {
     align-items: center;
 
   }
-  .tracking input{
+
+  .tracking input {
     height: 100%;
     font-size: 1em;
   }
 
-  .tracking button{
+  .tracking button {
     font-size: 1.1rem;
   }
 }
@@ -438,25 +439,27 @@ a {
   }
 }
 
-@media (max-width: 993px){
-  .galeria, .infotext {
+@media (max-width: 993px) {
+
+  .galeria,
+  .infotext {
     padding: 8px;
   }
 
-  .infotext h1{
+  .infotext h1 {
     font-size: 12px;
   }
- 
-  .infotext h3{
+
+  .infotext h3 {
     font-size: 10px
   }
 }
 
-@media (max-width: 600px){
-  .galeria{
-  display: flex!important;
-  flex-direction: column;
-}
+@media (max-width: 600px) {
+  .galeria {
+    display: flex !important;
+    flex-direction: column;
+  }
 }
 
 /* chofer */
@@ -525,11 +528,11 @@ a {
 
 /* contacto   */
 
-footer{
+footer {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center ;
+  justify-content: center;
 }
 
 .contacto {
@@ -802,3 +805,5 @@ textarea {
 
   color: var(--blanco) !important;
 }
+
+/* F I N  */
