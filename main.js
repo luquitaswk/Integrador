@@ -29,5 +29,3 @@ window.onscroll = function(){
 
 
 }
-
-alert("estoy probando");
